@@ -64,4 +64,24 @@ An anonymized dataset that can be used to train the machine-learning model has b
 
 ## Conclusions
 
-TBD..
+- How many houses are present in each cluster?
+    - Number of houses in cluster 0 = 5522
+    - Number of houses in cluster 1 = 8649
+    - Number of houses in cluster 2 = 1665
+    - Number of houses in cluster 3 = 3490
+    - Number of houses in cluster 4 = 2283
+      
+- What factors contributed to the formation of the clusters in relation to their geographical location?
+    - Each cluster appears to be its own quadrant on the map, with cluster 0 representing the southwest; cluster 1 representing the northwest; cluster 2 representing the northeast; and cluster 3 representing the southeast.
+      
+- What elements influenced the creation of clusters in relation to price per square foot?
+    - Cluster 3 includes the lowest-priced homes; cluster 0 includes the second lowest-priced homes; cluster 2 includes the second highest-priced homes; and cluster 1 includes the highest-priced homes. Other than the heatmap, this is also exhibited in the fact that the size of each data point corresponds to its total price.
+
+
+- Is this model effective in addressing the challenge of suggesting comparable homes to buyers interested in a particular property?
+    - Given its unsupervised nature, it's very difficult to evaluate the performance of a clustering model. The best weapons are knowing what is desired out of the model and performing clustering analysis. In this case, the number of clusters isn't supported much by domain knowledge; in other words, there's no set number of groups that houses need to fall into. However, one might argue that more clusters will be helpful to the real estate agents, as they will narrow down the houses more. Still, one may have to trust in analysis methods like silhouette analysis and elbow plots. Although the former was chosen to influence the final model, you could choose the latter and it would be no less valid. There might also be some value found in doing further analysis by plotting the clusters in more than just the latitude and longitude dimensions. Going back to domain knowledge and what you desire out of the model, you may determine that some features are more important than others, which might influence your clustering decisions.
+
+  
+- What are some potential reasons that could necessitate the retraining of this model over time?
+    - There are several factors that could potentially require a retrain of this clustering model, most of which have to do with the dataset. In particular, this dataset was captured at a certain point in time, and therefore may not reflect future changes. For example, housing trends come and go, and what may have been a desirable trait when this data was collected may not be as desirable in the future. Likewise, changing economic factors can greatly affect the value of a house from year to year, so you'll likely need to update the model to account for this.
+
