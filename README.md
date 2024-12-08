@@ -1,5 +1,6 @@
-# Building a K-Means Clustering Model
+# [Building a K-Means Clustering Model](https://nbviewer.org/github/tyrantdavis/Clustering-Housing/blob/main/Clustering-Kmeans.ipynb) - Housing
 
+Click the title to see project demo.
 
 ---
 
